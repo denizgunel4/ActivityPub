@@ -22,9 +22,7 @@ public class ActivityPubUtilities {
      * @return reference to the Server
      */
     public static Server createServer(String name){
-        // TODO: to be implemented
         Server currServer = new Servers(name);
-        //currServer.setNaming(service);
         service.registerServer(name, currServer);
         return currServer;
     }
