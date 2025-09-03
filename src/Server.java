@@ -7,10 +7,7 @@ import java.util.stream.Stream;
 
 public interface Server {
     public static HashMap<String, Actor> allActors = new HashMap<>();
-    //public InMemoryNamingService naming;
 
-    //public void setNaming(NamingService naming);
-    
     /**
      * Retrieves the server name.
      * 
