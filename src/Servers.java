@@ -1,14 +1,11 @@
 package it.polito.activitypub;
 
-import javax.swing.text.html.Option;
-
 import java.util.*;
 import java.util.stream.Stream;
 
 public class Servers implements Server, NamingService{
     protected String serverName;
     protected HashMap<String, Actor> actorsMap = new HashMap<>();
-    //protected NamingService naming;
 
     public Servers(String name){
         serverName = name;
@@ -17,10 +14,6 @@ public class Servers implements Server, NamingService{
     public String getName(){
         return serverName;
     }
-
-    //public void setNaming(NamingService naming){
-    //    this.naming = naming;
-    //}
 
     public Actor createActor(String a, String b) throws ActivityPubException{
         String str ="@" +a+ "@" + serverName;
